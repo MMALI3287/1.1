@@ -7,7 +7,7 @@ int main()
     int num, guess, attempt = 0;
     srand(time(0));
     num = rand() % 100 + 1;
-    printf("The number is %d\n", num);
+    // printf("The number is %d\n", num);
     printf("Guess the number between 1 to 100\n");
     do
     {
