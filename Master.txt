@@ -1,0 +1,40 @@
+1.(1)^2+(2)^2+(3)^2+(4)^2+...........+n^2==
+2.(1)^3+(2)^3+(3)^3+(4)^3+...........+n^3==
+3.1!+2!+3!+4!+...........+n!==
+4.1+2+3+4+...........+n==
+5.1+3+5+7+...............n==
+6.2+4+6+8+..........+n==
+7.Addition
+8.Area of a circle
+9.Area of a equilateral triangle
+10.Area of a 'ShomoDiBahu' triangle
+11.Area of a triangle with base and height
+12.Area of a triangle with three hand
+13.Biggest number
+14.Capitalize
+15.Consonant OR Vowel if if else
+16.Consonant OR Vowel using Switch
+17.Converting temperature from celsius scale to Fahrenheit scale
+18.Conversion between Centimeter & Inch
+19.Conversion between Foot & Meter
+20.Determining the value of f(x)
+21.Determining the value of f(x,y)
+22.Even OR Odd
+23.Factorial
+24.for loop typing
+25.GCD
+26.If Capital
+27.If three hand can build a triangle
+28.LCM
+29.Leap year
+30.Pass OR Fail
+31.Positive OR Negative
+32.Prime Number
+33.Print Name & Occupation
+34.Print Something
+35.Printing from (A) to (Z) using loop
+36.Printing from a to z using loop
+37.Printing number in word
+38.Proportional (A by B  IS EQUAL  B by A)
+39.Smallest number
+40.Velocity of a car

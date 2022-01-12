@@ -1,0 +1,55 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch CommonShares",
+            "request": "launch",
+            "mainClass": "Java.CommonShares",
+            "projectName": "C Code_207848ac"
+        },
+        {
+            "type": "java",
+            "name": "Launch CGPA_Calc",
+            "request": "launch",
+            "mainClass": "CGPA_Calc",
+            "projectName": "C Code_207848ac"
+        },
+        {
+            "type": "java",
+            "name": "Launch CBSE",
+            "request": "launch",
+            "mainClass": "CBSE",
+            "projectName": "C Code_207848ac"
+        },
+        {
+            "type": "java",
+            "name": "Launch java",
+            "request": "launch",
+            "mainClass": "java",
+            "projectName": "C Code_1c79d78b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "C Code_2476b9cd"
+        },
+        {
+            "name": "cl.exe - Build and debug active file",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "console": "externalTerminal",
+            "preLaunchTask": "C/C++: cl.exe build active file"
+        }
+    ]
+}
