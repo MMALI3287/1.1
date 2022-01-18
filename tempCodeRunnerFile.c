@@ -1,1 +1,1 @@
-rand() % 100 + 1;
+#define MAX_STRING_SIZE 1000
