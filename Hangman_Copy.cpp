@@ -2,12 +2,25 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
+#include <ctime>
 #include <iostream>
+#include <random>
+#include <windows.h>
 #define MAX_STRING_SIZE 1000
 using namespace std;
+int randNum()
+{
+    mt19937 mt(time(nullptr));
+    unsigned int a = mt() % 4 + 1;
+    return a;
+}
+void sleep(unsigned milliseconds)
+{
+    Sleep(milliseconds);
+}
 int main()
 {
-    int numOfBlank = 0, j = 0;
+    int numOfBlank = 0, j = 0, gap = 0, curRanNum = 0, prevRanNum = 0, dash[2], b;
     char letter;
     char str[MAX_STRING_SIZE], pick[MAX_STRING_SIZE];
     FILE *fp;
@@ -33,18 +46,29 @@ int main()
     }
     fclose(fp);
     string word = pick;
-    char word2[word.length()];
-    for (int i = 0; i <= word.length() - 2; i++)
+    char word2[word.length() - 1];
+    while (gap < 2)
     {
-        if (i == 0 || i == word.length() - 2 || i == 1 || i == 2 || i == 3 || i == 4)
-            word2[i] = word[i];
-        else
+        while (curRanNum == prevRanNum)
         {
-            word2[i] = '_';
+            curRanNum = randNum();
+            // cout << curRanNum << endl;
+        }
+        if (curRanNum != prevRanNum)
+        {
+            word2[curRanNum] = '_';
             numOfBlank++;
         }
+        prevRanNum = curRanNum;
+        dash[gap] = curRanNum;
+        gap++;
     }
-    for (int i = 0; i <= word.length() - 2; i++)
+    for (int i = 0; i <= word.length() - 1; i++)
+    {
+        if (word2[i] != '_')
+            word2[i] = word[i];
+    }
+    for (int i = 0; i <= word.length() - 1; i++)
     {
         cout << word2[i] << " ";
     }
@@ -52,9 +76,9 @@ int main()
     {
         cout << endl;
         cin >> letter;
-        if (letter == word[j + 1])
+        if (letter == word[dash[j]])
         {
-            word2[j + 1] = letter;
+            word2[dash[j]] = letter;
             for (int i = 0; i <= word.length() - 1; i++)
             {
                 cout << word2[i] << " ";
