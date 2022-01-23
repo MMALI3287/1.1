@@ -20,7 +20,7 @@ int randNum()
 int main()
 {
     // Variables//
-    int numOfBlank = 0, dashInd = 0, gap = 0, curRanNum = 0, prevRanNum = 0, dash[2];
+    int numOfBlank = 0, dashInd = 0, gap = 0, curRanNum = 0, prevRanNum = 0, dash[2], dash1[4] = {0, 1, 2, 3}, dash2[3] = {4, 5, 6}, ind;
     char letter;
     char str[MAX_STRING_SIZE], pick[MAX_STRING_SIZE];
     FILE *fp;
@@ -50,7 +50,15 @@ int main()
     string word1 = pick;
     char word2[word1.length() - 1];
     // entering '_' in random index in word2//
-    while (gap < 2)
+    ind = randNum() % 3;
+    word2[dash1[ind]] = '_';
+    numOfBlank++;
+    dash[gap++] = dash1[ind];
+    ind = randNum() % 2;
+    word2[dash2[ind]] = '_';
+    numOfBlank++;
+    dash[gap++] = dash2[ind];
+    /*while (gap < 2)
     {
         while (curRanNum <= prevRanNum)
         {
@@ -66,7 +74,7 @@ int main()
         dash[gap] = curRanNum;
         // Sleep(2000);
         gap++;
-    }
+    }*/
     // filling other index of word2 which does not include '_'//
     for (int i = 0; i <= word1.length() - 1; i++)
     {
