@@ -6,27 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Launch CommonShares",
-            "request": "launch",
-            "mainClass": "Java.CommonShares",
-            "projectName": "C Code_207848ac"
-        },
-        {
-            "type": "java",
-            "name": "Launch CGPA_Calc",
-            "request": "launch",
-            "mainClass": "CGPA_Calc",
-            "projectName": "C Code_207848ac"
-        },
-        {
-            "type": "java",
-            "name": "Launch CBSE",
-            "request": "launch",
-            "mainClass": "CBSE",
-            "projectName": "C Code_207848ac"
-        },
-        {
-            "type": "java",
             "name": "Launch java",
             "request": "launch",
             "mainClass": "java",

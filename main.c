@@ -1,15 +1,6 @@
-#include <stdio.h>
-
-void print(int x)
-{
-    x = 5;
-    printf("%d\n", x);
-}
+#include<stdio.h>
 int main()
 {
-    int x = 10;
-    printf("%d\n", x);
-    print(x);
-    printf("%d", x);
+    printf(" Number is %d",69);
     return 0;
 }
